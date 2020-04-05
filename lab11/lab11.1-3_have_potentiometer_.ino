@@ -130,8 +130,8 @@ void setup() {
 void loop(){
   // Track
   //int sensor_value = analogRead(POTENTIOMETER);
-  //int setpoint = analogRead(POTENTIOMETER);
-  int setpoint = getSetpoint();
+  int setpoint = analogRead(POTENTIOMETER);
+  //int setpoint = getSetpoint();
   int error = setpoint - encoderCount;
   int p = 1.0*(float)(error);
   
